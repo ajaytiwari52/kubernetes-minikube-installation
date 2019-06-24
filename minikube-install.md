@@ -23,11 +23,13 @@ curl -Lo kubectl https://storage.googleapis.com/kubernetes-release/release/${KUB
   && kubectl version
 
 # Output:
+```
 % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100 54.6M  100 54.6M    0     0   421k      0  0:02:13  0:02:13 --:--:-- 13.8M
 Client Version: version.Info{Major:"1", Minor:"12", GitVersion:"v1.12.2", GitCommit:"17c77c7898218073f14c8d573582e8d2313dc740", GitTreeState:"clean", BuildDate:"2018-10-24T06:54:59Z", GoVersion:"go1.10.4", Compiler:"gc", Platform:"linux/amd64"}
 The connection to the server localhost:8080 was refused - did you specify the right host or port?
+```
 
 # Install minikube:
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64  \
@@ -35,10 +37,12 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
   && minikube version
 
 #Output
+```
 % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100 40.3M  100 40.3M    0     0   311k      0  0:02:12  0:02:12 --:--:-- 8693k
 minikube version: v0.30.0
+```
 
 # Remove minikube
 sudo yum remove kubeadm kubectl kubelet kubernetes-cni kube
@@ -81,3 +85,4 @@ minikube start --vm-driver=none
   
   ### References
   https://vocon-it.com/2018/11/19/single-node-kubernetes-cluster-1-installing-minikube-on-centos/
+  https://vocon-it.com/2018/11/26/single-node-kubernetes-cluster-2-deploying-a-hello-world-application/
