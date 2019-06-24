@@ -78,3 +78,6 @@ minikube start --vm-driver=none
 * Done! kubectl is now configured to use "minikube"
 
   ```
+  
+  ### References
+  https://vocon-it.com/2018/11/19/single-node-kubernetes-cluster-1-installing-minikube-on-centos/
