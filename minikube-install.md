@@ -39,3 +39,8 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
                                  Dload  Upload   Total   Spent    Left  Speed
 100 40.3M  100 40.3M    0     0   311k      0  0:02:12  0:02:12 --:--:-- 8693k
 minikube version: v0.30.0
+
+# Remove minikube
+sudo yum remove kubeadm kubectl kubelet kubernetes-cni kube
+sudo yum autoremove
+sudo rm -rf ~/.kube
