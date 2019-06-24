@@ -44,3 +44,37 @@ minikube version: v0.30.0
 sudo yum remove kubeadm kubectl kubelet kubernetes-cni kube
 sudo yum autoremove
 sudo rm -rf ~/.kube
+
+# Start minikube
+minikube start --vm-driver=none
+
+### log
+  ```
+   minikube v1.2.0 on linux (amd64)
+* minikube will upgrade the local cluster from Kubernetes 1.14.2 to 1.15.0
+* Tip: Use 'minikube start -p <name>' to create a new cluster, or 'minikube delete' to delete this one.
+* Restarting existing none VM for "minikube" ...
+* Waiting for SSH access ...
+* Configuring environment for Kubernetes v1.15.0 on Docker 18.06.1-ce
+* Downloading kubeadm v1.15.0
+* Downloading kubelet v1.15.0
+* Pulling images ...
+* Relaunching Kubernetes v1.15.0 using kubeadm ...
+* Configuring local host environment ...
+
+! The 'none' driver provides limited isolation and may reduce system security and reliability.
+! For more information, see:
+  - https://github.com/kubernetes/minikube/blob/master/docs/vmdriver-none.md
+
+! kubectl and minikube configuration will be stored in /root
+! To use kubectl or minikube commands as your own user, you may
+! need to relocate them. For example, to overwrite your own settings:
+
+  - sudo mv /root/.kube /root/.minikube $HOME
+  - sudo chown -R $USER $HOME/.kube $HOME/.minikube
+
+* This can also be done automatically by setting the env var CHANGE_MINIKUBE_NONE_USER=true
+* Verifying: apiserver proxy etcd scheduler controller dns
+* Done! kubectl is now configured to use "minikube"
+
+  ```
