@@ -5,4 +5,4 @@ As per [Minikube](https://github.com/kubernetes/minikube) site
 I followed this [guide](https://kubernetes.io/docs/tasks/tools/install-minikube/)
 I faced several challenges. One of the major challenge for me was that I had windows envrioment and I cannot install virtual box in it. I was provided a VM by my company which I could use for R&D stuff. The VM was centos 7 machine. I can access this machine via putty.
 
-To follow the installation read this [
+To follow the installation read this [guide](minikube-install.md)
