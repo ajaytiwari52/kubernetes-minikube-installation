@@ -1,8 +1,8 @@
 # Minikube installation guide
 ## Install docker
 The steps I followed to install docker in my centos 7 VM offline, taken from docker.com
-  1. Go to [docker](https://download.docker.com/linux/centos/7/x86_64/stable/Packages/) and download the .rpm file for the Docker version you want to install.
-  2. Install Docker CE, changing the path below to the path where you downloaded the Docker package.
+  - Go to [docker](https://download.docker.com/linux/centos/7/x86_64/stable/Packages/) and download the .rpm file for the Docker version you want to install.
+  - Install Docker CE, changing the path below to the path where you downloaded the Docker package.
   ```
       $ sudo yum install /path/to/package.rpm
   ```
@@ -14,11 +14,16 @@ The steps I followed to install docker in my centos 7 VM offline, taken from doc
  ```
 
 Than, again I tried running install command.
-Start the docker
-        systemctl start docker
-Test docer docler run hello-world.
+- Start docker
+```
+systemctl start docker
+```
+- Test docker
+```
+docker run hello-world
+```
 
-Install Kubernetes Client (kubectl)
+- Install Kubernetes Client (kubectl)
 ```
 KUBE_VERSION=v1.12.2
 ```
