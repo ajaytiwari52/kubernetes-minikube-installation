@@ -1,4 +1,5 @@
-# Install docker
+# Minikube installation guide
+## Install docker
 The steps I followed to install docker in my centos 7 VM offline, taken from docker.com
   1. Go to [docker](https://download.docker.com/linux/centos/7/x86_64/stable/Packages/) and download the .rpm file for the Docker version you want to install.
   2. Install Docker CE, changing the path below to the path where you downloaded the Docker package.
@@ -30,7 +31,7 @@ curl -Lo kubectl https://storage.googleapis.com/kubernetes-release/release/${KUB
   && kubectl version
  ```
 
-### Output:
+#### Output:
 ```
 % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
@@ -39,14 +40,14 @@ Client Version: version.Info{Major:"1", Minor:"12", GitVersion:"v1.12.2", GitCom
 The connection to the server localhost:8080 was refused - did you specify the right host or port?
 ```
 
-# Install minikube:
+## Install minikube:
 ```
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64  \
   && install minikube-linux-amd64 /usr/local/bin/minikube \
   && minikube version
 ```
 
-### Output
+#### Output
 ```
 % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
@@ -54,19 +55,19 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 minikube version: v0.30.0
 ```
 
-# Remove minikube
+## Remove minikube
 ```
 sudo yum remove kubeadm kubectl kubelet kubernetes-cni kube
 sudo yum autoremove
 sudo rm -rf ~/.kube
 ```
 
-# Start minikube
+## Start minikube
 ```
 minikube start --vm-driver=none
 ```
 
-### log
+#### log
   ```
    minikube v1.2.0 on linux (amd64)
 * minikube will upgrade the local cluster from Kubernetes 1.14.2 to 1.15.0
