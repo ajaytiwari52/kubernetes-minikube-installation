@@ -30,7 +30,7 @@ curl -Lo kubectl https://storage.googleapis.com/kubernetes-release/release/${KUB
   && kubectl version
  ```
 
-# Output:
+### Output:
 ```
 % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
@@ -46,7 +46,7 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
   && minikube version
 ```
 
-#Output
+### Output
 ```
 % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
